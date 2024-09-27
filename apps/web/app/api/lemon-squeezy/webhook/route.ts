@@ -49,9 +49,11 @@ export const POST = withError(async (request: Request) => {
   const premiumId = premium?.id;
 
   if (!premiumId) {
-    throw new Error(
+    console.warn(
       `No user found for lemonSqueezyCustomerId ${lemonSqueezyCustomerId}`,
     );
+
+    return NextResponse.json({ ok: true });
   }
 
   // extra seats for lifetime plan
@@ -77,6 +79,15 @@ export const POST = withError(async (request: Request) => {
       payload,
       premiumId,
       endsAt: payload.data.attributes.ends_at,
+    });
+  }
+
+  // payment failed
+  if (payload.meta.event_name === "subscription_payment_failed") {
+    return await subscriptionCancelled({
+      payload,
+      premiumId,
+      endsAt: new Date().toISOString(),
     });
   }
 

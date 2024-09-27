@@ -20,7 +20,6 @@ import { usePostHog } from "posthog-js/react";
 import { HelpCircleIcon, PlusIcon } from "lucide-react";
 import { Card } from "@/components/Card";
 import { Button } from "@/components/ui/button";
-import { ButtonLoader } from "@/components/Loading";
 import { ErrorMessage, Input, Label } from "@/components/Input";
 import { toastError, toastSuccess } from "@/components/Toast";
 import {
@@ -383,14 +382,16 @@ export function RuleForm({ rule }: { rule: CreateRuleBody & { id?: string } }) {
                 </Link>
               </Button>
             )}
-            <Button type="submit" disabled={isSubmitting}>
-              {isSubmitting && <ButtonLoader />}
+            <Button
+              type="submit"
+              disabled={isSubmitting}
+              loading={isSubmitting}
+            >
               Save
             </Button>
           </>
         ) : (
-          <Button type="submit" disabled={isSubmitting}>
-            {isSubmitting && <ButtonLoader />}
+          <Button type="submit" disabled={isSubmitting} loading={isSubmitting}>
             Create
           </Button>
         )}
