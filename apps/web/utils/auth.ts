@@ -135,6 +135,7 @@ export const getAuthOptions: (options?: {
     signIn: "/login",
     error: "/login/error",
   },
+  trustHost: true,
 });
 
 export const authOptions = getAuthOptions();

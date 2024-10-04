@@ -96,6 +96,10 @@
     "//#format-and-lint": {},
     "//#format-and-lint:fix": {
       "cache": false
+    },
+    "start": {
+      "cache": true,
+      "persistent": true
     }
   }
 }
