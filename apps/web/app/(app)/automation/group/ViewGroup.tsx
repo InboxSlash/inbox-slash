@@ -295,13 +295,12 @@ const AddGroupItemForm = ({
       <Input
         type="text"
         name="value"
-        placeholder="eg. elie@getinboxzero.com"
+        placeholder="eg. mo@inboxslash.com"
         registerProps={register("value", { required: true })}
         error={errors.value}
         className="min-w-[250px]"
       />
-      <Button type="submit" variant="outline" disabled={isSubmitting}>
-        {isSubmitting && <ButtonLoader />}
+      <Button type="submit" variant="outline" loading={isSubmitting}>
         Add
       </Button>
     </form>

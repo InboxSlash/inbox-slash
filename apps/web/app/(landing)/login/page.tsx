@@ -73,7 +73,7 @@ export default async function AuthenticationPage({
         </p>
 
         <p className="px-4 pt-4 text-center text-sm text-gray-500">
-          Inbox Zero{"'"}s use and transfer of information received from Google
+          Inbox Slash{"'"}s use and transfer of information received from Google
           APIs to any other app will adhere to{" "}
           <a
             href="https://developers.google.com/terms/api-services-user-data-policy"

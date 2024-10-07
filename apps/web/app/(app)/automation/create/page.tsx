@@ -13,7 +13,6 @@ import {
   TypographyH3,
 } from "@/components/Typography";
 import { Button } from "@/components/ui/button";
-import { ButtonLoader } from "@/components/Loading";
 import { createAutomationAction } from "@/utils/actions/ai-rule";
 import { isActionError } from "@/utils/error";
 import { toastError, toastInfo } from "@/components/Toast";
@@ -105,8 +104,8 @@ export default function AutomationSettingsPage() {
                 <Button
                   type="submit"
                   disabled={isSubmitting || !prompt || prompt.length < 5}
+                  loading={isSubmitting}
                 >
-                  {isSubmitting && <ButtonLoader />}
                   Preview Automation
                 </Button>
               </div>

@@ -20,7 +20,6 @@ import { usePostHog } from "posthog-js/react";
 import { HelpCircleIcon, PlusIcon } from "lucide-react";
 import { Card } from "@/components/Card";
 import { Button } from "@/components/ui/button";
-import { ButtonLoader } from "@/components/Loading";
 import { ErrorMessage, Input, Label } from "@/components/Input";
 import { toastError, toastSuccess } from "@/components/Toast";
 import {
@@ -190,7 +189,7 @@ export function RuleForm({ rule }: { rule: CreateRuleBody & { id?: string } }) {
             label="From"
             registerProps={register("from")}
             error={errors.from}
-            placeholder="eg. elie@getinboxzero.com"
+            placeholder="eg. mo@inboxslash.com"
             tooltipText="Only apply this rule to emails from this address."
           />
           <Input
@@ -199,7 +198,7 @@ export function RuleForm({ rule }: { rule: CreateRuleBody & { id?: string } }) {
             label="To"
             registerProps={register("to")}
             error={errors.to}
-            placeholder="eg. elie@getinboxzero.com"
+            placeholder="eg. mo@inboxslash.com"
             tooltipText="Only apply this rule to emails sent to this address."
           />
           <Input
@@ -383,14 +382,16 @@ export function RuleForm({ rule }: { rule: CreateRuleBody & { id?: string } }) {
                 </Link>
               </Button>
             )}
-            <Button type="submit" disabled={isSubmitting}>
-              {isSubmitting && <ButtonLoader />}
+            <Button
+              type="submit"
+              disabled={isSubmitting}
+              loading={isSubmitting}
+            >
               Save
             </Button>
           </>
         ) : (
-          <Button type="submit" disabled={isSubmitting}>
-            {isSubmitting && <ButtonLoader />}
+          <Button type="submit" disabled={isSubmitting} loading={isSubmitting}>
             Create
           </Button>
         )}

@@ -6,7 +6,6 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { type PostHog, usePostHog } from "posthog-js/react";
 import { survey } from "@/app/(landing)/welcome/survey";
 import { Button } from "@/components/ui/button";
-import { ButtonLoader } from "@/components/Loading";
 import { Input } from "@/components/Input";
 import { env } from "@/env";
 import {
@@ -80,7 +79,7 @@ export const OnboardingForm = (props: { questionIndex: number }) => {
         submitPosthog(responses);
         await completedOnboardingAction();
 
-        if (process.env.NEXT_PUBLIC_WELCOME_UPGRADE_ENABLED) {
+        if (env.NEXT_PUBLIC_WELCOME_UPGRADE_ENABLED) {
           router.push("/welcome-upgrade");
         } else {
           // send to automation home if AI Automation is chosen
@@ -159,17 +158,15 @@ export const OnboardingForm = (props: { questionIndex: number }) => {
             <Button
               className="mt-4 w-full"
               type="submit"
-              disabled={isSubmitting}
+              loading={isSubmitting}
             >
-              {isSubmitting && <ButtonLoader />}
               Get Started
             </Button>
           </div>
         )}
 
         {(question.type === "multiple_choice" || showOtherInput) && (
-          <Button className="mt-4 w-full" type="submit" disabled={isSubmitting}>
-            {isSubmitting && <ButtonLoader />}
+          <Button className="mt-4 w-full" type="submit" loading={isSubmitting}>
             Next
           </Button>
         )}

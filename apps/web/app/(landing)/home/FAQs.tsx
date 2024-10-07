@@ -36,7 +36,7 @@ const faqs = [
         </a>{" "}
         or{" "}
         <a
-          href="mailto:elie@getinboxzero.com"
+          href="mailto:mo@inboxslash.com"
           target="_blank"
           className="font-semibold hover:underline"
           rel="noreferrer"
@@ -63,7 +63,7 @@ const faqs = [
       <>
         If you don{"'"}t think we provided you with value send us an{" "}
         <a
-          href="mailto:elie@getinboxzero.com"
+          href="mailto:mo@inboxslash.com"
           target="_blank"
           className="font-semibold hover:underline"
           rel="noreferrer"

@@ -1,30 +1,10 @@
-import { Suspense } from "react";
-import type { Metadata } from "next";
-import { HeroHome } from "@/app/(landing)/home/Hero";
-import { FeaturesHome } from "@/app/(landing)/home/Features";
-import { Testimonials } from "@/app/(landing)/home/Testimonials";
-import { Pricing } from "@/app/(app)/premium/Pricing";
-import { FAQs } from "@/app/(landing)/home/FAQs";
-import { CTA } from "@/app/(landing)/home/CTA";
-import { BasicLayout } from "@/components/layouts/BasicLayout";
+import type {Metadata} from "next";
+import {redirect} from 'next/navigation'
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/" },
+    alternates: {canonical: "/"},
 };
 
 export default function Home() {
-  return (
-    <BasicLayout>
-      <HeroHome />
-      <Testimonials />
-      <FeaturesHome />
-      <Suspense>
-        <div className="pb-32">
-          <Pricing />
-        </div>
-      </Suspense>
-      <FAQs />
-      <CTA />
-    </BasicLayout>
-  );
+    redirect(`/login`);
 }
