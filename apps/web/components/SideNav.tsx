@@ -322,7 +322,7 @@ function Sidebar(props: { isMobile: boolean }) {
     >
       <Link href="/bulk-unsubscribe">
         <div className="flex h-16 shrink-0 items-center text-white">
-          <Logo className="h-4" />
+          <Logo className="h-6" />
         </div>
       </Link>
       <nav className="flex flex-1 flex-col">
