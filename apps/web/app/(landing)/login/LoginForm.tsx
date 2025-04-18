@@ -43,7 +43,7 @@ export function LoginForm() {
             <DialogTitle>Sign in</DialogTitle>
           </DialogHeader>
           <SectionDescription>
-            Inbox Zero{"'"}s use and transfer of information received from
+            Inbox Slash{"'"}s use and transfer of information received from
             Google APIs to any other app will adhere to{" "}
             <a
               href="https://developers.google.com/terms/api-services-user-data-policy"

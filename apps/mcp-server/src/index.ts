@@ -42,7 +42,7 @@ async function makeIZRequest<T>(url: string): Promise<T | null> {
 
     return (await response.json()) as T;
   } catch (error) {
-    console.error("Error making Inbox Zero API request:", error);
+    console.error("Error making Inbox Slash API request:", error);
     return null;
   }
 }
@@ -128,7 +128,7 @@ server.tool(
 async function main() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.error("Inbox Zero MCP Server running on stdio");
+  console.error("Inbox Slash MCP Server running on stdio");
 }
 
 main().catch((error) => {

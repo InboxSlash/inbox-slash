@@ -30,7 +30,7 @@ const sendEmail = async ({
   const text = await render(react, { plainText: true });
 
   const result = await resend.emails.send({
-    from: "Inbox Zero <updates@transactional.getinboxzero.com>",
+    from: "Inbox Slash <updates@transactional.getinboxzero.com>",
     to: test ? "delivered@resend.dev" : to,
     subject,
     react,

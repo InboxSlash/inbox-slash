@@ -255,7 +255,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <SidebarHeader>
           <Link href="/setup">
             <div className="flex h-12 items-center p-4 text-white">
-              <Logo className="h-4" />
+              <Logo className="h-6" />
             </div>
           </Link>
         </SidebarHeader>

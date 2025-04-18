@@ -25,9 +25,9 @@ const calFont = localFont({
   display: "swap",
 });
 
-const title = "Inbox Zero | Automate and clean your inbox";
+const title = "Inbox Slash | Automate and clean your inbox";
 const description =
-  "Inbox Zero is your AI personal assistant for email and the quickest way to reach inbox zero. Automate your email, bulk unsubscribe from newsletters, block cold emails, and view your email analytics. Open-source.";
+  "Inbox Slash is your AI personal assistant for email and the quickest way to reach Inbox Slash. Automate your email, bulk unsubscribe from newsletters, block cold emails, and view your email analytics. Open-source.";
 
 export const metadata: Metadata = {
   title,
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title,
     description,
-    siteName: "Inbox Zero",
+    siteName: "Inbox Slash",
     type: "website",
   },
   twitter: {
@@ -51,11 +51,11 @@ export const metadata: Metadata = {
     follow: true,
   },
   // pwa
-  applicationName: "Inbox Zero",
+  applicationName: "Inbox Slash",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Inbox Zero",
+    title: "Inbox Slash",
     startupImage,
   },
   formatDetection: {

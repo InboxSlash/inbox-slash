@@ -148,7 +148,7 @@ export function List({
           <Celebration
             message={
               type === "inbox"
-                ? "You made it to Inbox Zero!"
+                ? "You made it to Inbox Slash!"
                 : "All emails handled!"
             }
           />

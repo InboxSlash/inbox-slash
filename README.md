@@ -2,10 +2,10 @@
 
 <p align="center">
   <a href="https://www.getinboxzero.com">
-    <h1 align="center">Inbox Zero - Your AI Email Assistant</h1>
+    <h1 align="center">Inbox Slash - Your AI Email Assistant</h1>
   </a>
   <p align="center">
-    Open source email app to reach inbox zero fast.
+    Open source email app to reach Inbox Slash fast.
     <br />
     <a href="https://www.getinboxzero.com">Website</a>
     ·
@@ -17,7 +17,7 @@
 
 ## About
 
-There are two parts to Inbox Zero:
+There are two parts to Inbox Slash:
 
 1. An AI email assistant that helps you spend less time on email.
 2. Open source AI email client.
@@ -26,7 +26,7 @@ If you're looking to contribue to the project, the email client is the best plac
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Felie222%2Finbox-zero&env=NEXTAUTH_SECRET,GOOGLE_CLIENT_ID,GOOGLE_CLIENT_SECRET,GOOGLE_ENCRYPT_SECRET,GOOGLE_ENCRYPT_SALT,UPSTASH_REDIS_URL,UPSTASH_REDIS_TOKEN,GOOGLE_PUBSUB_TOPIC_NAME,DATABASE_URL)
 
-Thanks to Vercel for sponsoring Inbox Zero in support of open-source software.
+Thanks to Vercel for sponsoring Inbox Slash in support of open-source software.
 
 ## Features
 
@@ -49,7 +49,7 @@ Learn more in our [docs](https://docs.getinboxzero.com).
 
 ## Demo Video
 
-[![Inbox Zero demo](/video-thumbnail.png)](http://www.youtube.com/watch?v=hfvKvTHBjG0)
+[![Inbox Slash demo](/video-thumbnail.png)](http://www.youtube.com/watch?v=hfvKvTHBjG0)
 
 ## Built with
 
@@ -66,7 +66,7 @@ To request a feature open a [GitHub issue](https://github.com/elie222/inbox-zero
 
 ## Getting Started for Developers
 
-We offer a hosted version of Inbox Zero at [https://getinboxzero.com](https://getinboxzero.com). To self-host follow the steps below.
+We offer a hosted version of Inbox Slash at [https://getinboxzero.com](https://getinboxzero.com). To self-host follow the steps below.
 
 ### Contributing to the project
 

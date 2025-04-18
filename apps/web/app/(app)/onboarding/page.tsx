@@ -23,9 +23,9 @@ export default async function OnboardingPage(props: {
       <LoadStats loadBefore showToast={false} />
 
       <div className="px-4 xl:px-0">
-        <PageHeading>First steps to Inbox Zero</PageHeading>
+        <PageHeading>First steps to Inbox Slash</PageHeading>
         <TypographyP>
-          Get to know Inbox Zero and set up your account.
+          Get to know Inbox Slash and set up your account.
         </TypographyP>
       </div>
 
@@ -56,7 +56,7 @@ export default async function OnboardingPage(props: {
             },
             {
               title: "Continue",
-              description: "Get started with Inbox Zero",
+              description: "Get started with Inbox Slash",
               content: <OnboardingFinish />,
               active: step === 4,
             },

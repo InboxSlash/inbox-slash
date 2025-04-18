@@ -10,7 +10,7 @@ import { HeroSubtitle, HeroText } from "@/app/(landing)/home/Hero";
 import { CardBasic } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Open Source Friends | Inbox Zero",
+  title: "Open Source Friends | Inbox Slash",
   description: "Some other great Open Source projects to follow",
   alternates: { canonical: "/oss-friends" },
 };

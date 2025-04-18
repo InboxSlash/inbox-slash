@@ -155,7 +155,9 @@ function SetupContent({
   return (
     <div className="mx-auto flex min-h-screen w-full max-w-3xl flex-col p-6">
       <div className="mb-4 sm:mb-8">
-        <PageHeading className="text-center">Welcome to Inbox Zero</PageHeading>
+        <PageHeading className="text-center">
+          Welcome to Inbox Slash
+        </PageHeading>
         <SectionDescription className="mt-2 text-center text-base">
           {isSetupComplete
             ? "What would you like to do?"

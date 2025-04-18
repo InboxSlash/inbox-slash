@@ -1,6 +1,6 @@
 import { messageVisibility } from "@/utils/gmail/constants";
 
-export const PARENT_LABEL = "Inbox Zero";
+export const PARENT_LABEL = "Inbox Slash";
 
 const blue = "#b6cff5";
 const cyan = "#98d7e4";
